@@ -1,0 +1,170 @@
+
+
+/* 
+колір фону #F5F5F5 
+вторинний #F5F4FA
+колір тексту #212121
+вторинний тексту #757575
+колір посилань #2196F3
+
+*/
+
+:root {
+    --primary-text-color:#212121;
+    --primary-background-color:#F5F5F5;
+    --title-text-color:#757575; 
+    
+}
+
+body {
+    background: var(--primary-background-color);
+    font-family: 'Roboto', 'raleway', sans-serif;
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+
+  /* загальні */
+
+.list {
+    list-style: none;
+      } 
+
+  /* Шапка сайту */
+
+.site-list .page-title
+ {
+color:var(--primary-text-color);  
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+}
+.site-contacts .contacts {
+    color: #757575;
+}
+.site-list .page-title:hover,
+.site-list .page-title:focus,
+.site-contacts .contacts:hover,
+.site-contacts .contacts:focus {
+    color: #2196F3;
+} 
+
+/* Герой */
+
+.hero {
+    
+    background: #2F303A;
+  }
+
+.hero-title {
+font-family: 'Roboto';
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+/* or 136% */
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.link-hero {
+   
+
+background: #2196F3;
+}
+
+.title-hero {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+/* identical to box height, or 188% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #FFFFFF;
+}
+/* Опис переваг */
+
+.section-title {
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.features {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+}
+
+.feature-list .text {
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+/* or 171% */
+
+letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* команда */
+
+.user {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+}   
+.job-title, .project-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    color: #757575;
+    
+}
+
+/* сторінка Портфоліо */
+
+/* фільтр */
+
+.button {
+    
+    letter-spacing: 0.03em;
+    }
+    .btn-links .button:hover,
+    .btn-links .button:focus {
+        color: #F5F4FA;
+        background: #2196F3;
+        border-radius: 4px;
+      }
+      btn-links .button:active {
+        background: #2196F3;
+      }
+
+/* проекти */
+
+.project-title {
+
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+/* identical to box height, or 200% */
+
+letter-spacing: 0.06em;
+}
