@@ -11,8 +11,11 @@
 
 :root {
     --primary-text-color:#212121;
-    --primary-background-color:#F5F5F5;
+    --primary-background-color:#FFFFFF;
     --title-text-color:#757575; 
+    --primary-title-color:#2196F3; 
+    --primary-bcg-hero:#2F303A;
+    --primary-button-text:#FFFFFF;
     
 }
 
@@ -24,6 +27,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     font-weight: 500;
+    text-decoration: none;
   }
 
   /* загальні */
@@ -34,6 +38,20 @@ body {
 
   /* Шапка сайту */
 
+.logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+}
+.ingredient {
+        color: var(--primary-title-color)
+}
+.studio-header {
+    color: #000000;
+}
+
 .site-list .page-title
  {
 color:var(--primary-text-color);  
@@ -43,20 +61,20 @@ letter-spacing: 0.02em;
 
 }
 .site-contacts .contacts {
-    color: #757575;
+    color: var(--title-text-color);
 }
 .site-list .page-title:hover,
 .site-list .page-title:focus,
 .site-contacts .contacts:hover,
 .site-contacts .contacts:focus {
-    color: #2196F3;
+    color: var(--primary-title-color)
 } 
 
 /* Герой */
 
 .hero {
     
-    background: #2F303A;
+    background: var(--primary-bcg-hero)
   }
 
 .hero-title {
@@ -68,13 +86,12 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--primary-button-text);
 }
 
 .link-hero {
-   
-
-background: #2196F3;
+cursor: pointer;
+background: var(--primary-title-color);
 }
 
 .title-hero {
@@ -88,7 +105,7 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 
-color: #FFFFFF;
+color: var(--primary-button-text)
 }
 /* Опис переваг */
 
@@ -115,11 +132,18 @@ line-height: 1.71;
 /* or 171% */
 
 letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--title-text-color);
 }
 
 /* команда */
 
+.background-title {
+    background-color: #F5F4FA;
+}
+
+.background-user {
+    background-color: var(--primary-background-color)
+}
 .user {
     font-weight: 500;
 font-size: 16px;
@@ -135,7 +159,7 @@ letter-spacing: 0.03em;
     /* identical to box height */
     
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--title-text-color);
     
 }
 
@@ -144,27 +168,54 @@ letter-spacing: 0.03em;
 /* фільтр */
 
 .button {
-    
+    cursor: pointer;
     letter-spacing: 0.03em;
     }
-    .btn-links .button:hover,
-    .btn-links .button:focus {
+.btn-links .button:hover,
+.btn-links .button:focus {
         color: #F5F4FA;
-        background: #2196F3;
+        background: var(--primary-title-color);
         border-radius: 4px;
       }
       btn-links .button:active {
-        background: #2196F3;
+        background: var(--primary-title-color);
       }
+.btn-style {
+    font-family: inherit;
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+/* identical to box height, or 162% */
+
+text-align: center;
+letter-spacing: 0.03em;
+}
 
 /* проекти */
 
 .project-title {
-
+    text-decoration: none;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 /* identical to box height, or 200% */
 
 letter-spacing: 0.06em;
+color: var(--primary-text-color)
+}
+
+
+/* підвал */
+.studio-footer {
+    color: var(--primary-background-color);
+}
+
+.add-footer {
+    font-style: normal;
+    font-size: 14px;
+line-height: 1.71;
+/* or 171% */
+
+letter-spacing: 0.03em;
+    color: var(--primary-background-color);
 }
